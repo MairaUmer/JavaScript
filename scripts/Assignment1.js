@@ -44,8 +44,8 @@ var familyMembers =(prompt("How many members in your family:"));
 var fitrahMethod = prompt("Select a fitrah methods: \n1. Gandum \n2. Jau \n3.Khajur \n4. Kismish");
 
 // declare variables for the selecting methods and range
-let fitrah;
-let range;
+var fitrah;
+var range;
 
 //methods and range by user input and conditions
 if (fitrahMethod  === "1")
