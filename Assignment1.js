@@ -44,8 +44,8 @@ var familyMembers = (prompt("How many members in your family:"));
 var fitrahMethod = prompt("Select a fitrah methods: \n1. Gandum \n2. Jau \n3.Khajur \n4. Kismish");
 
 // declare variables for the selecting methods and range
-let fitrah;
-let range;
+var fitrah;
+var range;
 
 //methods and range by user input and conditions
 if (fitrahMethod === "1") {
@@ -287,11 +287,11 @@ function myAge(birthdaydate) {
   var today = new Date();
   var birthDate = new Date(birthdaydate);
   var age = today.getFullYear() - birthDate.getFullYear();
-  const month = today.getMonth() - birthDate.getMonth();
+  var month = today.getMonth() - birthDate.getMonth();
   if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
     age--;
   }
   return age;
 }
-const currentAge = myAge("2000-11-23");
+var currentAge = myAge("2000-11-23");
 console.log(currentAge); 
